@@ -1,0 +1,25 @@
+{
+    "name": "MyNewPiece",
+    "description": "This Piece runs my awesome Python function, in any Workflow!",
+    "dependency": {
+        "requirements_file": "requirements_0.txt"
+    },
+    "container_resources": {
+        "requests": {
+            "cpu": 100,
+            "memory": 128
+        },
+        "limits": {
+            "cpu": 500,
+            "memory": 512
+        }
+    },
+    "style": {
+        "node_label": "My awesome Piece",
+        "icon_class_name": "fas fa-database"
+    },
+    "tags": [
+        "Awesome",
+        "New"
+    ]
+}

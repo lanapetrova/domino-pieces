@@ -1,2 +1,2 @@
-# domino-pieces
-Domino pieces
+# [Pieces repository name]
+[Description of this Pieces repository]

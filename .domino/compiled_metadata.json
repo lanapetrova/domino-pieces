@@ -23,12 +23,12 @@
         "description": "This is an example of a simple Domino Piece",
         "container_resources": {
             "requests": {
-                "cpu": "100m",
-                "memory": "128Mi"
+                "cpu": "100",
+                "memory": "128"
             },
             "limits": {
-                "cpu": "500m",
-                "memory": "512Mi"
+                "cpu": "500",
+                "memory": "512"
             }
         },
         "input_schema": {

@@ -1,8 +1,8 @@
 {
-    "ExampleSimplePiece": {
-        "name": "ExampleSimplePiece",
+    "MyNewPiece": {
+        "name": "MyNewPiece",
         "tags": [
-            "Example"
+            "NewPiece"
         ],
         "style": {
             "node_label": "Simple Piece",
@@ -31,76 +31,56 @@
             "title": "InputModel",
             "type": "object",
             "properties": {
-                "distribution_name": {
-                    "description": "Name of the distribution to sample from",
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/DistributionType"
-                        }
-                    ]
+                "in_argument_1": {
+					"title": "Argument 1",
+                    "description": "an argument of numeric type with default value",
+                    "type": "number",
+					"default": 1.0
                 },
-                "distribution_mean": {
-                    "title": "Distribution Mean",
-                    "description": "Distribution mean",
-                    "type": "number"
+                "in_argument_2": {
+                    "title": "Argument 2",
+                    "description": "a required argument of string type",
+                    "type": "string"
                 },
-                "distribution_sd": {
-                    "title": "Distribution Sd",
-                    "description": "Distribution standard deviation",
-                    "default": 1.0,
-                    "exclusiveMinimum": 0.0,
-                    "type": "number"
+                "in_argument_3": {
+                    "title": "Argument 3",
+                    "description": "a required argument of boolean type",
+                    "type": "boolean"
                 }
             },
             "required": [
-                "distribution_name",
-                "distribution_mean"
-            ],
-            "definitions": {
-                "DistributionType": {
-                    "title": "DistributionType",
-                    "description": "An enumeration.",
-                    "enum": [
-                        "gaussian",
-                        "poisson"
-                    ],
-                    "type": "string"
-                }
-            }
+				"in_argument_2",
+				"in_argument_3"
+			]
         },
         "output_schema": {
             "title": "OutputModel",
             "type": "object",
             "properties": {
-                "message": {
-                    "title": "Message",
-                    "description": "Output message to log",
+                "out_argument_1": {
+                    "title": "Argument 1",
+                    "description": "an argument of string type",
                     "type": "string"
                 },
-                "sample_result": {
-                    "title": "Sample Result",
-                    "description": "The result of this Piece's processing",
+                "out_file_path": {
+                    "title": "File path",
+                    "description": "The path to a file saved in a shared storage",
                     "type": "string"
                 }
             },
-            "required": [
-                "message",
-                "sample_result"
-            ]
+            "required": []
         },
         "secrets_schema": {
             "title": "SecretsModel",
             "type": "object",
             "properties": {
-                "EXAMPLE_OPERATOR_SECRET_1": {
-                    "title": "Example Operator Secret 1",
-                    "description": "A secret necessary to run this Piece",
+                "SECRET_VAR": {
+                    "title": "Example Secret variable",
+                    "description": "Secret variable",
                     "type": "string"
                 }
             },
-            "required": [
-                "EXAMPLE_OPERATOR_SECRET_1"
-            ]
+            "required": []
         }
     }
 }

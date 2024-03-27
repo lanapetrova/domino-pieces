@@ -1,0 +1,14 @@
+{
+    "group0": {
+        "dependency": {
+            "dockerfile": null
+        },
+        "pieces": [
+            "ExampleSimplePiece"
+        ],
+        "secrets": [
+            "EXAMPLE_OPERATOR_SECRET_1"
+        ],
+        "source_image": "ghcr.io/tauffer-consulting/enter-your-repository-name-here:0.1.0-group0"
+    }
+}

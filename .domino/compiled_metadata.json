@@ -72,7 +72,7 @@
         },
         "secrets_schema": {
             "title": "SecretsModel",
-			"type": "object"
+			"type": "object",
 			"description": "New Piece secret model", 
             "properties": {
                 "SECRET_VAR": {

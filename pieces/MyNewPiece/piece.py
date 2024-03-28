@@ -13,7 +13,7 @@ class MyNewPiece(BasePiece):
         print(f"Inpu argument 3: {input_data.in_argument_3}")
 
         # The Piece's secrets are passed in the 'secrets_data' argument
-        print(f"Secret variable: {secrets_data.SECRET_VAR}")
+        #print(f"Secret variable: {secrets_data.SECRET_VAR}")
 
         # If you want to save files in a shared storage, to be used by other Pieces,
         # you should save them under self.results_path
